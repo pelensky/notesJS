@@ -3,4 +3,10 @@ function testReturnText() {
   assert.isTrue(note.text === "My favourite language is Javascript");
 };
 
+function testReturnText() {
+  var note = new Note("Test");
+  assert.isTrue(note.getText() === "Test");
+};
+
 testReturnText();
+testGetText();
