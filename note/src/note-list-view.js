@@ -19,7 +19,6 @@
     return output + "</ul>";
   };
 
-
   exports.NoteListView = NoteListView;
 
 })(this);

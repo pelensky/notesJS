@@ -9,7 +9,7 @@ function testNewListCreated() {
 function testNoteIsInList() {
   var list = new NoteList();
   var note = new Note('yo');
-  list.saveNote(note);
+  list.newNote(note);
   console.log("TEST: testNoteListIsInList")
   assert.isTrue(list.seeList().length === 1)
 };

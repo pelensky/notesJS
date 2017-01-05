@@ -10,7 +10,7 @@
     return this._list;
   };
 
-  NoteList.prototype.saveNote = function(text) {
+  NoteList.prototype.newNote = function(text) {
     var note = new Note(text);
     this._list.push(note)
   };
