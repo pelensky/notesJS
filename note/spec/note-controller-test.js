@@ -11,7 +11,7 @@ function innerPropertyOfAppContainsHTML(){
   cont.createNote("Favourite food: pesto");
   cont.getHTML();
   console.log("TEST: innerPropertyOfAppContainsHTML");
-  assert.isTrue(document.getElementById('app').innerHTML === '<ul><li><div>Favourite food: pesto</div></li></ul>');
+  assert.isTrue(document.getElementById('app').innerHTML === '<ul><li><div>Favourite food: pest</div></li></ul>');
 }
 
 noteControllerIsInstantiated();

@@ -21,6 +21,15 @@ function testNoteListViewReturnsHTML() {
   assert.isTrue(listView.returnHTML() === "<ul><li><div>this is a string</div></li></ul>");
 };
 
+function testNoteListViewReturnsHTMLStringWith20Character() {
+  var noteList = new NoteList();
+  noteList.newNote("This is a very very long string!");
+  var listView = new NoteListView(noteList);
+  console.log("TEST:testNoteListViewReturnsHTMLStringWith20Character");
+  assert.isTrue(listView.returnHTML() === "<ul><li><div>This is a very very </div></li></ul>");
+}
+
 testNewNoteListViewCreated();
 testNoteListViewTakesNoteListModel();
 testNoteListViewReturnsHTML();
+testNoteListViewReturnsHTMLStringWith20Character()
