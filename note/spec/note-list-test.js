@@ -14,5 +14,22 @@ function testNoteIsInList() {
   assert.isTrue(list.seeList().length === 1)
 };
 
+function testNoteHasIDProperty() {
+  var list = new NoteList();
+  list.newNote("note 1 with ID 0")
+  console.log("TEST: testNoteHasUniqueID")
+  assert.isTrue(list._list[0].noteID === 0)
+};
+
+function testNoteHasUniqueID() {
+  var list = new NoteList();
+  list.newNote("note 1 with ID 0")
+  list.newNote("note 2 with ID 1")
+  console.log("TEST: testNoteHasUniqueID")
+  assert.isTrue(list._list[1].noteID === 1)
+};
+
 testNewListCreated();
 testNoteIsInList();
+testNoteHasIDProperty();
+testNoteHasUniqueID();

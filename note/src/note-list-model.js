@@ -11,7 +11,8 @@
   };
 
   NoteList.prototype.newNote = function(text) {
-    var note = new Note(text);
+    var id = this._list.length;
+    var note = new Note(text, id);
     this._list.push(note)
   };
 
