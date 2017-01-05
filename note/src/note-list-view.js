@@ -12,11 +12,11 @@
 
   NoteListView.prototype.returnHTML = function() {
     var list = this._noteList._list;
-    var output = "<p>";
+    var output = "<ul>";
     for (var i = 0; i < list.length; i++) {
-      output += list[i].readNote();
+      output += "<li><div>" + list[i].readNote() + "</div></li>";
     }
-    return output + "</p>";
+    return output + "</ul>";
   };
 
 
