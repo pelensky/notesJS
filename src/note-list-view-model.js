@@ -7,7 +7,7 @@
     var output = "<ul>"
 
     for(i=0;i<this.noteList.getNotes().length;i++) {
-      output += "<li><div>" + this.noteList.notes[i].getText() + "</div></li>"
+      output += "<li><div>" + this.noteList.notes[i].getText().substring(0,20) + "</div></li>"
     }
     return output + "</ul>"
   }
