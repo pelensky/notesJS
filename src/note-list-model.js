@@ -4,7 +4,8 @@
   };
 
   NoteList.prototype.createNote = function(text){
-    var newNote = new Note(text);
+    var noteID = this.getNotes().length;
+    var newNote = new Note(text, noteID);
     this.notes.push(newNote);
   };
 
