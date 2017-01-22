@@ -1,4 +1,12 @@
-User Stories
+#Javascript Notes App
+## Weekly Challenge
+### Week Seven
+
+Instructions
+-------
+* Open `index.html` in a browser
+* Open the javascript console `command + option + j` to see the passing tests
+
 
 ```
 As a programmer
